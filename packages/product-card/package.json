@@ -20,6 +20,7 @@
     "react": "^18.2.0"
   },
   "dependencies": {
+    "@mikqi/button": "workspace:*",
     "clsx": "^1.1.1"
   },
   "peerDependencies": {

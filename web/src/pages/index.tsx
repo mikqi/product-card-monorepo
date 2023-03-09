@@ -1,6 +1,11 @@
 import Head from 'next/head'
+import { Inter } from 'next/font/google'
 import { ProductCard } from '@mikqi/product-card'
-import { Button } from '@mikqi/button'
+
+const inter = Inter({
+  variable: '--inter-font',
+  subsets: ['latin'],
+})
 
 export default function Home() {
   return (
@@ -11,9 +16,27 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <ProductCard active />
-        <Button fullWidth>Add to cart</Button>
+      <main
+        className={inter.variable}
+        style={{
+          display: 'flex',
+          width: '100%',
+          gap: '4rem',
+          padding: '2rem',
+        }}
+      >
+        <ProductCard
+          name="Adidas Pureboost 22 Running Shoes Sepatu Lari Pria"
+          price={1695000}
+          discount={50}
+          src="/adidas.jpg"
+        />
+        <ProductCard
+          name="Adidas Pureboost 22 Running Shoes Sepatu Lari Pria"
+          price={1695000}
+          src="/adidas.jpg"
+          active={false}
+        />
       </main>
     </>
   )

@@ -65,9 +65,11 @@ importers:
 
   packages/product-card:
     specifiers:
+      '@mikqi/button': workspace:*
       clsx: ^1.1.1
       react: ^18.2.0
     dependencies:
+      '@mikqi/button': link:../button
       clsx: 1.2.1
     devDependencies:
       react: 18.2.0
