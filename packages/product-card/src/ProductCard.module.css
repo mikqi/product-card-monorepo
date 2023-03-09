@@ -70,6 +70,10 @@
   object-fit: contain;
 }
 
+.imageContainer img.disabled {
+  opacity: 0.5;
+}
+
 .detailsContainer {
   padding: 8px;
   display: flex;

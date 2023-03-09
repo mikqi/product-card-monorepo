@@ -71,7 +71,11 @@ export const ProductCard = ({
   return (
     <div className={clsx(styles.productCard, className)}>
       <div className={styles.imageContainer}>
-        <img className={styles.image} src={src} alt={name} />
+        <img
+          className={clsx(styles.image, !active && styles.disabled)}
+          src={src}
+          alt={name}
+        />
       </div>
       <div className={styles.detailsContainer}>
         <div className={styles.metaContainer}>

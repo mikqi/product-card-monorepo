@@ -19,84 +19,24 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={clsx(inter.variable, 'max-w-7xl lg:mx-auto')}>
-        {/* <ProductCard
-          name="Adidas Ultra Boost 21 Running Shoes with Primeknit"
-          discount={10}
-          price={100000}
-          src="/adidas.jpg"
-        /> */}
-        <div className="bg-white">
-          <div className="py-16 sm:py-24 lg:mx-auto lg:max-w-7xl lg:px-8">
-            <div className="relative mt-8">
-              <div className="relative -mb-6 w-full overflow-x-auto pb-6">
-                <div role="list" className="mx-4 inline-flex space-x-8">
-                  {PRODUCTS_DATA.map((product, idx) => (
-                    <ProductCard
-                      key={product.name}
-                      name={product.name}
-                      price={product.price}
-                      discount={product.discount}
-                      className="inline-flex w-64 flex-col text-center lg:w-auto"
-                      src={`${product.image}?id=${idx}`}
-                    />
-                    // <li
-                    //   key={product.name}
-                    //   className="inline-flex w-64 flex-col text-center lg:w-auto"
-                    // >
-                    //   <div className="group relative">
-                    //     <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200">
-                    //       <img
-                    //         src={product.image}
-                    //         alt={product.name}
-                    //         className="h-full w-full object-cover object-center group-hover:opacity-75"
-                    //       />
-                    //     </div>
-                    //     <div className="mt-6">
-                    //       <h3 className="mt-1 font-semibold text-gray-900">
-                    //         <span className="absolute inset-0" />
-                    //         {product.name}
-                    //       </h3>
-                    //       <p className="mt-1 text-gray-900">{product.price}</p>
-                    //     </div>
-                    //   </div>
-
-                    //   <h4 className="sr-only">Available colors</h4>
-                    // </li>
-                  ))}
-                </div>
+        <div className="py-16 sm:py-24 lg:mx-auto lg:max-w-7xl lg:px-8">
+          <div className="relative mt-8">
+            <div className="relative -mb-6 w-full overflow-x-auto pb-6">
+              <div role="list" className="mx-4 inline-flex space-x-8">
+                {PRODUCTS_DATA.map((product, idx) => (
+                  <ProductCard
+                    key={product.name}
+                    name={product.name}
+                    price={product.price}
+                    discount={product.discount}
+                    active={product.stock > 0}
+                    src={`${product.image}?id=${idx}`}
+                  />
+                ))}
               </div>
-            </div>
-
-            <div className="mt-12 flex px-4 sm:hidden">
-              <a
-                href="#"
-                className="text-sm font-semibold text-indigo-600 hover:text-indigo-500"
-              >
-                See everything
-                <span aria-hidden="true"> &rarr;</span>
-              </a>
             </div>
           </div>
         </div>
-
-        {/* <div className="py-16 sm:py-24 lg:mx-auto lg:max-w-7xl lg:px-8">
-          <div className="relative -mb-6 w-full overflow-x-auto pb-6">
-            <div
-              role="list"
-              className="mx-4 inline-flex space-x-8 sm:mx-6 lg:mx-0 lg:grid lg:grid-cols-4 lg:gap-x-8 lg:space-x-0"
-            >
-              {PRODUCTS_DATA.map((product, idx) => (
-                <ProductCard
-                  key={product.name}
-                  name={product.name}
-                  price={product.price}
-                  discount={product.discount}
-                  src={`${product.image}?id=${idx}`}
-                />
-              ))}
-            </div>
-          </div>
-        </div> */}
       </main>
     </>
   )
