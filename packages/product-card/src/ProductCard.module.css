@@ -3,6 +3,6 @@
 }
 
 .productCard.active {
-  background-color: #f0f0f0;
-  color: #000;
+  background-color: #000;
+  color: #fff;
 }

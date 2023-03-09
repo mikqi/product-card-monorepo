@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "Product Card UI Component",
   "license": "MIT",
-  "source": "src/index.ts",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
   "typings": "dist/index.d.ts",
   "sideEffects": false,
@@ -13,12 +12,11 @@
     "dist"
   ],
   "scripts": {
-    "builder": "ui-build",
     "build": "tsup src",
+    "dev": "tsup src --watch",
     "lint": "eslint src --ext .ts,.tsx --config ../../../.eslintrc.js --max-warnings=0"
   },
   "devDependencies": {
-    "@mikqi/ui-builder": "workspace:*",
     "react": "^18.2.0"
   },
   "dependencies": {

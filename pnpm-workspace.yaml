@@ -1,5 +1,4 @@
 packages:
-  - "packages/*"
-  - "toolings/*"
-  - "examples/*"
-  - "!**/__test__/**"
+  - 'packages/*'
+  - 'web'
+  - '!**/__test__/**'
