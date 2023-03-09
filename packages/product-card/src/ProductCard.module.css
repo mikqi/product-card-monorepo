@@ -96,5 +96,9 @@
   .productCard {
     width: 132px;
   }
+
+  .productCard .button {
+    font-size: 12px;
+  }
 }
 

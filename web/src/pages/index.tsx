@@ -22,7 +22,10 @@ export default function Home() {
         <div className="py-16 sm:py-24 lg:mx-auto lg:max-w-7xl lg:px-8">
           <div className="relative mt-8">
             <div className="relative -mb-6 w-full overflow-x-auto pb-6">
-              <div role="list" className="mx-4 inline-flex space-x-8">
+              <div
+                role="list"
+                className="mx-2 lg:mx-4 inline-flex space-x-4 lg:space-x-8"
+              >
                 {PRODUCTS_DATA.map((product, idx) => (
                   <ProductCard
                     key={product.name}
