@@ -1,0 +1,47 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  appearance: none;
+  outline: none;
+  background: #489ED8;
+  color: #fff;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  border-radius: 8px;
+}
+
+.button:hover {
+  background: #3a7fb0;
+}
+
+.button:focus {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #489ED8;
+}
+
+.button:focus {
+  z-index: 1;
+}
+
+.button[aria-disabled='true'],
+.button[aria-disabled='true'] i {
+  cursor: not-allowed;
+  color: #C4C4C4;
+  background-color: #F3F3F3;
+}
+
+.button[aria-disabled='true']:focus {
+  box-shadow: none;
+}
+
+.fullWidth {
+  width: 100%;
+}
