@@ -30,6 +30,7 @@ interface ProductCardProps {
    * If false, the "Add to Cart" button is disabled.
    */
   active?: boolean
+  className?: string
 }
 
 /**
@@ -63,25 +64,28 @@ export const ProductCard = ({
   discount,
   src,
   active = true,
+  className,
 }: ProductCardProps) => {
   const discountedPrice = discount ? price - (price * discount) / 100 : 0
 
   return (
-    <div className={clsx(styles.productCard)}>
+    <div className={clsx(styles.productCard, className)}>
       <div className={styles.imageContainer}>
         <img className={styles.image} src={src} alt={name} />
       </div>
       <div className={styles.detailsContainer}>
-        <div>
+        <div className={styles.metaContainer}>
           <div className={styles.name}>{name}</div>
           <div className={styles.price}>
             {discountedPrice ? monify(discountedPrice) : monify(price)}
           </div>
-          {discount && (
+          {discount ? (
             <div className={styles.discountContainer}>
               <span className={styles.discount}>{monify(price)}</span>
               <div className={styles.discountBadge}>{discount}%</div>
             </div>
+          ) : (
+            <></>
           )}
         </div>
         <Button fullWidth className={styles.button} disabled={!active}>
