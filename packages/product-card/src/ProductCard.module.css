@@ -8,6 +8,7 @@
   border-radius: 8px;
   overflow: hidden;
   transition: box-shadow 0.2s ease-in-out;
+  width: 180px;
 }
 
 .productCard:hover {
@@ -81,3 +82,10 @@
 .productCard .button {
   margin-top: 12px;
 }
+
+@media (max-width: 768px) {
+  .productCard {
+    width: 132px;
+  }
+}
+
