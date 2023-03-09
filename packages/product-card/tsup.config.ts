@@ -3,14 +3,18 @@ import cssModulesPlugin from 'esbuild-css-modules-plugin'
 
 export default defineConfig({
   treeshake: true,
-  sourcemap: true,
   minify: false,
   clean: true,
   dts: true,
   splitting: false,
   format: ['esm', 'cjs'],
   external: ['react'],
-  legacyOutput: true,
+  outExtension({ format }) {
+    console.log(format)
+    return {
+      js: `.${format}.js`,
+    }
+  },
   target: 'es5',
   esbuildPlugins: [cssModulesPlugin()],
 })
