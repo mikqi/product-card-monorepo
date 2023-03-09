@@ -19,13 +19,30 @@ interface ButtondProps extends React.HTMLAttributes<HTMLButtonElement> {
    * Determines whether the button should be full width or not. Defaults to false.
    */
   fullWidth?: boolean
+
+  /**
+   * Determines whether the button should be circle or not. Defaults to false.
+   */
+  circle?: boolean
 }
 
 export const Button = (props: ButtondProps) => {
-  const { children, disabled, fullWidth, className, onClick, ...buttonProps } =
-    props
+  const {
+    children,
+    disabled,
+    fullWidth,
+    className,
+    onClick,
+    circle,
+    ...buttonProps
+  } = props
 
-  const classes = clsx(styles.button, fullWidth && styles.fullWidth, className)
+  const classes = clsx(
+    styles.button,
+    fullWidth && styles.fullWidth,
+    circle && styles.circle,
+    className
+  )
 
   function handleClick(event: React.MouseEvent<HTMLButtonElement>) {
     if (disabled) {

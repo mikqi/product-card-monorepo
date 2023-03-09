@@ -3,6 +3,8 @@ import * as React from 'react'
 import { ProductCard } from '@mikqi/product-card'
 import { Button } from '@mikqi/button'
 
+import { FaChevronRight, FaChevronLeft } from 'react-icons/fa'
+
 import { PRODUCTS_DATA } from '@/data/product'
 
 export const ProductLists = () => {
@@ -57,8 +59,9 @@ export const ProductLists = () => {
           className="px-4 py-2 bg-gray-200 hover:bg-gray-300 mr-4"
           onClick={handlePrevClick}
           disabled={scrollPosition <= 0}
+          circle
         >
-          Prev
+          <FaChevronLeft />
         </Button>
       </div>
       <div className="absolute top-1/2 -right-10 transform -translate-y-1/2 flex">
@@ -73,8 +76,9 @@ export const ProductLists = () => {
               50 <
             Math.abs(scrollPosition)
           }
+          circle
         >
-          Next
+          <FaChevronRight />
         </Button>
       </div>
     </div>
