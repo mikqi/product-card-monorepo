@@ -78,11 +78,11 @@ importers:
 
   packages/product-card:
     specifiers:
-      '@mikqi/button': workspace:*
+      '@kisanak/button': workspace:*
       clsx: ^1.1.1
       react: ^18.2.0
     dependencies:
-      '@mikqi/button': link:../button
+      '@kisanak/button': link:../button
       clsx: 1.2.1
     devDependencies:
       react: 18.2.0
@@ -100,10 +100,10 @@ importers:
 
   web:
     specifiers:
-      '@mikqi/button': workspace:*
-      '@mikqi/expander': workspace:*
-      '@mikqi/product-card': workspace:*
-      '@mikqi/scroll-to-top': workspace:*
+      '@kisanak/button': workspace:*
+      '@kisanak/expander': workspace:*
+      '@kisanak/product-card': workspace:*
+      '@kisanak/scroll-to-top': workspace:*
       '@types/node': 18.14.6
       '@types/react': 18.0.28
       '@types/react-dom': 18.0.11
@@ -117,10 +117,10 @@ importers:
       tailwindcss: 3.2.7
       typescript: 4.9.5
     dependencies:
-      '@mikqi/button': link:../packages/button
-      '@mikqi/expander': link:../packages/expander
-      '@mikqi/product-card': link:../packages/product-card
-      '@mikqi/scroll-to-top': link:../packages/scroll-to-top
+      '@kisanak/button': link:../packages/button
+      '@kisanak/expander': link:../packages/expander
+      '@kisanak/product-card': link:../packages/product-card
+      '@kisanak/scroll-to-top': link:../packages/scroll-to-top
       clsx: 1.2.1
       next: 13.2.3_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0

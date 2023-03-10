@@ -1,5 +1,5 @@
 {
-  "name": "@mikqi/product-card",
+  "name": "@kisanak/product-card",
   "version": "1.0.0",
   "description": "Product Card UI Component",
   "license": "MIT",
@@ -8,9 +8,7 @@
   "types": "dist/index.d.ts",
   "typings": "dist/index.d.ts",
   "sideEffects": false,
-  "publishConfig": {
-    "@mikqi:registry": "https://npm.pkg.github.com/"
-  },
+  
   "files": [
     "dist"
   ],
@@ -23,7 +21,7 @@
     "react": "^18.2.0"
   },
   "dependencies": {
-    "@mikqi/button": "workspace:*",
+    "@kisanak/button": "workspace:*",
     "clsx": "^1.1.1"
   },
   "peerDependencies": {

@@ -1,5 +1,5 @@
 {
-  "name": "@mikqi/button",
+  "name": "@kisanak/button",
   "version": "1.0.0",
   "description": "Button UI Component",
   "license": "MIT",
@@ -8,9 +8,7 @@
   "types": "dist/index.d.ts",
   "typings": "dist/index.d.ts",
   "sideEffects": false,
-  "publishConfig": {
-    "@mikqi:registry": "https://npm.pkg.github.com/"
-  },
+  
   "files": [
     "dist"
   ],

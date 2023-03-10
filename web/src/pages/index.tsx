@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Inter } from 'next/font/google'
-import { ScrollToTop } from '@mikqi/scroll-to-top'
-import { Expander } from '@mikqi/expander'
+import { ScrollToTop } from '@kisanak/scroll-to-top'
+import { Expander } from '@kisanak/expander'
 
 import clsx from 'clsx'
 import { ProductLists } from '@/app/Homepage/ProductLists'

@@ -1,6 +1,6 @@
 import * as React from 'react'
 import clsx from 'clsx'
-import { Button } from '@mikqi/button'
+import { Button } from '@kisanak/button'
 import styles from './ProductCard.module.css'
 
 interface ProductCardProps {

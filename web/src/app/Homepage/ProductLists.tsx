@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import { ProductCard } from '@mikqi/product-card'
-import { Button } from '@mikqi/button'
+import { ProductCard } from '@kisanak/product-card'
+import { Button } from '@kisanak/button'
 
 import { FaChevronRight, FaChevronLeft } from 'react-icons/fa'
 

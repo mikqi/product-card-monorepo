@@ -1,5 +1,5 @@
 {
-  "name": "@mikqi/web",
+  "name": "@kisanak/web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,10 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@mikqi/button": "workspace:*",
-    "@mikqi/expander": "workspace:*",
-    "@mikqi/product-card": "workspace:*",
-    "@mikqi/scroll-to-top": "workspace:*",
+    "@kisanak/button": "workspace:*",
+    "@kisanak/expander": "workspace:*",
+    "@kisanak/product-card": "workspace:*",
+    "@kisanak/scroll-to-top": "workspace:*",
     "clsx": "1.2.1",
     "next": "13.2.3",
     "react": "18.2.0",
