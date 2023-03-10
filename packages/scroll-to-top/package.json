@@ -1,6 +1,6 @@
 {
   "name": "@mikqi/scroll-to-top",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Scroll To Top UI Component",
   "license": "MIT",
   "main": "dist/index.cjs.js",
