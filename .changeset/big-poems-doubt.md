@@ -5,4 +5,4 @@
 '@mikqi/scroll-to-top': major
 ---
 
-Initial release
+Initial releases
