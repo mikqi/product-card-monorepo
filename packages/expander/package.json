@@ -1,0 +1,28 @@
+{
+  "name": "@mikqi/expander",
+  "version": "1.0.0",
+  "description": "Button UI Component",
+  "license": "MIT",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "typings": "dist/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src",
+    "dev": "watch \"tsup src\" src",
+    "lint": "eslint src --ext .ts,.tsx --config ../../../.eslintrc.js --max-warnings=0"
+  },
+  "devDependencies": {
+    "react": "^18.2.0"
+  },
+  "dependencies": {
+    "clsx": "^1.1.1"
+  },
+  "peerDependencies": {
+    "react": "16.x || 17.x || 18.x"
+  }
+}

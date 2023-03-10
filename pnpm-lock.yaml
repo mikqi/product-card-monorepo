@@ -63,6 +63,15 @@ importers:
     devDependencies:
       react: 18.2.0
 
+  packages/expander:
+    specifiers:
+      clsx: ^1.1.1
+      react: ^18.2.0
+    dependencies:
+      clsx: 1.2.1
+    devDependencies:
+      react: 18.2.0
+
   packages/product-card:
     specifiers:
       '@mikqi/button': workspace:*
@@ -86,6 +95,7 @@ importers:
   web:
     specifiers:
       '@mikqi/button': workspace:*
+      '@mikqi/expander': workspace:*
       '@mikqi/product-card': workspace:*
       '@mikqi/scroll-to-top': workspace:*
       '@types/node': 18.14.6
@@ -102,6 +112,7 @@ importers:
       typescript: 4.9.5
     dependencies:
       '@mikqi/button': link:../packages/button
+      '@mikqi/expander': link:../packages/expander
       '@mikqi/product-card': link:../packages/product-card
       '@mikqi/scroll-to-top': link:../packages/scroll-to-top
       clsx: 1.2.1

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@mikqi/button": "workspace:*",
+    "@mikqi/expander": "workspace:*",
     "@mikqi/product-card": "workspace:*",
     "@mikqi/scroll-to-top": "workspace:*",
     "clsx": "1.2.1",
