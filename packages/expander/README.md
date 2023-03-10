@@ -1,11 +1,11 @@
-# @wartek-id/avatar
+# @kisanak/avatar
 
 A Quick description of the component
 
 ## Installation
 
 ```sh
-yarn add @wartek-id/avatar
+yarn add @kisanak/avatar
 # or
-npm i @wartek-id/avatar
+npm i @kisanak/avatar
 ```
