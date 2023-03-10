@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <main className={clsx(inter.variable, 'max-w-7xl lg:mx-auto')}>
-        <div className="py-16 sm:py-24 lg:mx-auto lg:max-w-7xl lg:px-8">
+        <div className="py-16 text sm:py-24 lg:mx-auto lg:max-w-7xl lg:px-8">
           <ProductLists />
           <ProductLists />
           <ProductLists />

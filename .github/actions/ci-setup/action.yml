@@ -1,0 +1,20 @@
+name: 'CI Setup'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Install dependencies
+      uses: pnpm/action-setup@v2.2.4
+      with:
+        version: 7
+
+    - name: Use Node 16
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+
+    - name: Setup Git User
+      shell: bash
+      run: |
+        git config --global user.email "muhammad.rivki@live.com"
+        git config --global user.name "Muhammad Rivki"
