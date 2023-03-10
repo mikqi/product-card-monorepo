@@ -1,11 +1,11 @@
-# @kisanak/avatar
+# @kisanak/scroll-to-top
 
 A Quick description of the component
 
 ## Installation
 
 ```sh
-yarn add @kisanak/avatar
+yarn add @kisanak/scroll-to-top
 # or
-npm i @kisanak/avatar
+npm i @kisanak/scroll-to-top
 ```

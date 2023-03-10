@@ -1,11 +1,11 @@
-# @kisanak/avatar
+# @kisanak/expander
 
 A Quick description of the component
 
 ## Installation
 
 ```sh
-yarn add @kisanak/avatar
+yarn add @kisanak/expander
 # or
-npm i @kisanak/avatar
+npm i @kisanak/expander
 ```
