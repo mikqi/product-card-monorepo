@@ -9,7 +9,7 @@
   "typings": "dist/index.d.ts",
   "sideEffects": false,
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "@mikqi:registry": "https://npm.pkg.github.com/"
   },
   "files": [
     "dist"
