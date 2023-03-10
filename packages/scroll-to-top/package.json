@@ -1,6 +1,6 @@
 {
   "name": "@mikqi/scroll-to-top",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "Scroll To Top UI Component",
   "license": "MIT",
   "main": "dist/index.cjs.js",
@@ -23,6 +23,7 @@
     "react": "^18.2.0"
   },
   "dependencies": {
+    "clsx": "1.2.1",
     "react-icons": "4.8.0"
   },
   "peerDependencies": {
